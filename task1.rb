@@ -9,9 +9,7 @@ checker = "0123456789abcdefghijklmnopqrstuvwxyz"
 numDec = 0
 i = num.length-1
 while i >= 0
-	
 	numDec += (checker.index(num[i]))*(cs1**(num.length-1-i))
-	puts cs1**(num.length-1-i)
 	i -= 1
 end
 
