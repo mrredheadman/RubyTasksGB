@@ -8,7 +8,7 @@ monthLen = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
 
 #учитываем длину года и февраля в зависимости от високосных годов
 yearLen = 365
-if (yearNum % 4 == 0) 
+if (yearNum % 4 == 0 and yearNum != 4 and yearNum % 100 != 0) or (yearNum % 400 == 0)
 	monthLen[1] += 1
 	yearLen += 1 
 end
@@ -20,5 +20,4 @@ for i in 0..monthNum-1
 	today += monthLen[i]
 end
 today += dayNum
-
 puts yearLen-today
