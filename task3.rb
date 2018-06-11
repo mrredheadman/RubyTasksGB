@@ -9,7 +9,7 @@ min = result / 60
 result = result % 60
 sec = result
 
-#определеим склонение слова час
+#определим склонение слова час
 if (hou % 10 == 1) and (hou != 11)
 	resHou = "#{hou} час"
 elsif (hou % 10 < 5) and (hou % 10 > 1) and (hou / 10 != 1)
@@ -59,5 +59,8 @@ if resSec != "0"
 	end
 	finalTime += resSec 
 end
- 
-puts finalTime
+
+#вывод
+if finalTime != ""
+	puts finalTime
+end
