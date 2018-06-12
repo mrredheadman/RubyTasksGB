@@ -7,7 +7,7 @@ hou = result / 3600
 result = result % 3600
 min = result / 60
 result = result % 60
-sec = result
+sec = result / 1
 
 #определим склонение слова час
 if (hou % 10 == 1) and (hou != 11)
@@ -61,6 +61,6 @@ if resSec != "0"
 end
 
 #вывод
-if finalTime != ""
+if (finalTime != "") and (firTime <= 100000) and (firTime >= 0) and (secTime <= 100000) and (secTime >= 0)
 	puts finalTime
 end
