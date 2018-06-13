@@ -13,7 +13,7 @@ sec = result / 1
 if (hou % 10 == 1) and (hou != 11)
 	resHou = "#{hou} час"
 elsif (hou % 10 < 5) and (hou % 10 > 1) and (hou / 10 != 1)
-	resHou = "#{hou} часa"
+	resHou = "#{hou} часа"
 elsif (hou != 0)
 	resHou = "#{hou} часов"
 else 
